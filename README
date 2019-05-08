@@ -1,0 +1,23 @@
+To compile:
+
+   mpicc -o hello.exe hello.c
+
+   
+   OPTIONS:
+
+   -o specifies the filename of the executable
+
+
+
+To run:
+ 
+   mpiexec -np 4 -f nodes.txt ./hello.exe
+
+
+   OPTIONS:
+
+   -np specifies the number of processes/tasks
+   -f  specifies the filename containing the hostnames of the nodes 
+
+
+For more info contact jachermocilla@gmail.com
